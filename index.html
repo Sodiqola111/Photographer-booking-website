@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[PHOTOGRAPHER NAME] | Photography & Online Booking</title>
+  <meta name="description" content="Premium photography portfolio and online booking website for [PHOTOGRAPHER NAME].">
+  <meta property="og:title" content="[PHOTOGRAPHER NAME] | Photography">
+  <meta property="og:description" content="Explore the portfolio and request a photography session online.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+<body>
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a class="logo" href="#home" aria-label="Home">[PHOTOGRAPHER NAME]</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a><a href="#packages">Packages</a><a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a><a class="nav-cta" href="#booking">Book a Session</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <p class="eyebrow">Photography • Stories • Memories</p>
+    <h1>Capturing Moments.<br><em>Creating Memories.</em></h1>
+    <p class="hero-copy">Elegant, authentic photography for weddings, portraits, events, fashion and the moments worth remembering.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#booking">Book a Session</a><a class="btn btn-ghost" href="#portfolio">View My Work</a></div>
+  </div>
+  <a class="scroll-cue" href="#about" aria-label="Scroll to about"><span></span>Scroll to explore</a>
+</section>
+
+<section class="section" id="about">
+  <div class="container split">
+    <div class="about-image image-placeholder"><img src="images/photographer/photographer.jpg" alt="[PHOTOGRAPHER NAME], photographer" loading="lazy"></div>
+    <div class="about-copy">
+      <p class="eyebrow">About the Photographer</p>
+      <h2>Images with feeling, <em>stories with soul.</em></h2>
+      <p>[PHOTOGRAPHER NAME] is a professional photographer focused on creating natural, expressive and timeless images. Replace this paragraph with the photographer's real biography, experience and photography philosophy.</p>
+      <p>Specialisations can include weddings, portraits, events, fashion, corporate and lifestyle photography. Add only genuine credentials and locations served.</p>
+      <div class="stats">
+        <div><strong>[X]</strong><span>Years Experience</span></div>
+        <div><strong>[X]</strong><span>Sessions Completed</span></div>
+        <div><strong>[X]</strong><span>Happy Clients</span></div>
+        <div><strong>[X]</strong><span>Events Covered</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark" id="portfolio">
+  <div class="container">
+    <div class="section-heading light">
+      <div><p class="eyebrow">Selected Work</p><h2>A visual collection of <em>real moments.</em></h2></div>
+      <p>Replace the sample image paths with your own photography. Use the filters to organise your portfolio.</p>
+    </div>
+    <div class="filters" role="tablist" aria-label="Portfolio categories">
+      <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="weddings">Weddings</button>
+      <button class="filter" data-filter="portraits">Portraits</button><button class="filter" data-filter="events">Events</button>
+      <button class="filter" data-filter="fashion">Fashion</button><button class="filter" data-filter="couples">Couples</button>
+      <button class="filter" data-filter="corporate">Corporate</button><button class="filter" data-filter="lifestyle">Lifestyle</button>
+    </div>
+    <div class="gallery" id="gallery">
+      <article class="gallery-item tall" data-category="weddings"><img src="images/portfolio/photo-01.jpg" alt="Wedding photography placeholder" loading="lazy"><div class="gallery-caption">Wedding Story</div></article>
+      <article class="gallery-item" data-category="portraits"><img src="images/portfolio/photo-02.jpg" alt="Portrait photography placeholder" loading="lazy"><div class="gallery-caption">Portraits</div></article>
+      <article class="gallery-item" data-category="events"><img src="images/portfolio/photo-03.jpg" alt="Event photography placeholder" loading="lazy"><div class="gallery-caption">Events</div></article>
+      <article class="gallery-item wide" data-category="fashion"><img src="images/portfolio/photo-04.jpg" alt="Fashion photography placeholder" loading="lazy"><div class="gallery-caption">Fashion</div></article>
+      <article class="gallery-item" data-category="couples"><img src="images/portfolio/photo-05.jpg" alt="Couples photography placeholder" loading="lazy"><div class="gallery-caption">Couples</div></article>
+      <article class="gallery-item tall" data-category="corporate"><img src="images/portfolio/photo-06.jpg" alt="Corporate photography placeholder" loading="lazy"><div class="gallery-caption">Corporate</div></article>
+      <article class="gallery-item" data-category="lifestyle"><img src="images/portfolio/photo-07.jpg" alt="Lifestyle photography placeholder" loading="lazy"><div class="gallery-caption">Lifestyle</div></article>
+      <article class="gallery-item" data-category="portraits"><img src="images/portfolio/photo-08.jpg" alt="Portrait photography placeholder" loading="lazy"><div class="gallery-caption">Portraits II</div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-heading"><div><p class="eyebrow">What I Offer</p><h2>Photography for <em>every story.</em></h2></div></div>
+    <div class="service-grid">
+      <article class="service-card"><i class="fa-regular fa-heart"></i><h3>Wedding Photography</h3><p>Thoughtful coverage of the details, emotions and celebrations that make your day unique.</p><ul><li>Pre-wedding consultation</li><li>Edited high-resolution images</li><li>Online delivery</li></ul><strong>From [PRICE]</strong><a href="#booking" class="text-link" data-service="Wedding Photography">Book Now →</a></article>
+      <article class="service-card"><i class="fa-regular fa-user"></i><h3>Portrait Photography</h3><p>Personal portraits designed around your personality, purpose and preferred visual style.</p><ul><li>Session planning</li><li>Professional editing</li><li>Online gallery</li></ul><strong>From [PRICE]</strong><a href="#booking" class="text-link" data-service="Portrait Photography">Book Now →</a></article>
+      <article class="service-card"><i class="fa-solid fa-champagne-glasses"></i><h3>Event Photography</h3><p>Professional visual coverage for celebrations, launches, parties and special occasions.</p><ul><li>Event coverage</li><li>Edited image selection</li><li>Digital delivery</li></ul><strong>From [PRICE]</strong><a href="#booking" class="text-link" data-service="Event Photography">Book Now →</a></article>
+      <article class="service-card"><i class="fa-solid fa-shirt"></i><h3>Fashion Photography</h3><p>Editorial imagery for brands, campaigns, lookbooks and creative projects.</p><ul><li>Creative direction</li><li>Retouched images</li><li>Brand-ready delivery</li></ul><strong>From [PRICE]</strong><a href="#booking" class="text-link" data-service="Fashion Photography">Book Now →</a></article>
+      <article class="service-card"><i class="fa-solid fa-building"></i><h3>Corporate Photography</h3><p>Polished visual content for teams, businesses, professional profiles and campaigns.</p><ul><li>Professional portraits</li><li>Corporate events</li><li>Commercial-ready images</li></ul><strong>From [PRICE]</strong><a href="#booking" class="text-link" data-service="Corporate Photography">Book Now →</a></article>
+      <article class="service-card"><i class="fa-solid fa-people-roof"></i><h3>Family Photography</h3><p>Relaxed family sessions that preserve authentic connections and everyday joy.</p><ul><li>Session planning</li><li>Edited photographs</li><li>Online gallery</li></ul><strong>From [PRICE]</strong><a href="#booking" class="text-link" data-service="Family Photography">Book Now →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="packages">
+  <div class="container">
+    <div class="section-heading"><div><p class="eyebrow">Packages</p><h2>Choose the right <em>experience.</em></h2></div><p>Replace all price and feature placeholders with your actual packages before publishing.</p></div>
+    <div class="package-grid">
+      <article class="package"><p class="package-label">Essential</p><h3>Basic</h3><div class="price">[PRICE]</div><p>For shorter sessions and simple coverage.</p><ul><li>Short photography session</li><li>Limited edited images</li><li>Online delivery</li></ul><a class="btn btn-dark" href="#booking" data-package="Basic">Choose Basic</a></article>
+      <article class="package recommended"><span class="badge">Recommended</span><p class="package-label">Most Popular</p><h3>Standard</h3><div class="price">[PRICE]</div><p>More time and flexibility for a fuller story.</p><ul><li>Longer session</li><li>More edited images</li><li>Multiple locations</li><li>Online gallery</li></ul><a class="btn btn-dark" href="#booking" data-package="Standard">Choose Standard</a></article>
+      <article class="package"><p class="package-label">Signature</p><h3>Premium</h3><div class="price">[PRICE]</div><p>A complete, elevated photography experience.</p><ul><li>Extended session</li><li>Large image collection</li><li>Multiple locations</li><li>Premium editing</li><li>Private online gallery</li></ul><a class="btn btn-dark" href="#booking" data-package="Premium">Choose Premium</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section booking-section" id="booking">
+  <div class="container booking-layout">
+    <div class="booking-intro"><p class="eyebrow">Online Booking</p><h2>Let's plan your <em>session.</em></h2><p>Submit a booking request and the photographer can confirm availability and payment details afterwards.</p><div class="availability-box"><h3>Availability</h3><p class="demo-note">Demo calendar — replace the JavaScript availability data with a real API/backend later.</p><div class="calendar-head"><button id="prevMonth" aria-label="Previous month">‹</button><strong id="monthLabel"></strong><button id="nextMonth" aria-label="Next month">›</button></div><div class="weekdays"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div><div class="calendar" id="calendar"></div></div></div>
+    <form class="booking-form" id="bookingForm" novalidate>
+      <div class="form-grid">
+        <label>Full name *<input id="name" name="name" type="text" placeholder="Your full name" required><small></small></label>
+        <label>Email address *<input id="email" name="email" type="email" placeholder="you@example.com" required><small></small></label>
+        <label>Phone number *<input id="phone" name="phone" type="tel" placeholder="+234..." required><small></small></label>
+        <label>Service *<select id="service" name="service" required><option value="">Select service</option><option>Wedding Photography</option><option>Portrait Photography</option><option>Event Photography</option><option>Fashion Photography</option><option>Corporate Photography</option><option>Family Photography</option></select><small></small></label>
+        <label>Package *<select id="package" name="package" required><option value="">Select package</option><option>Basic</option><option>Standard</option><option>Premium</option></select><small></small></label>
+        <label>Preferred date *<input id="date" name="date" type="date" required><small></small></label>
+        <label>Preferred time *<input id="time" name="time" type="time" required><small></small></label>
+        <label>Number of people<input id="people" name="people" type="number" min="1" placeholder="e.g. 4"></label>
+        <label class="full">Location *<input id="location" name="location" type="text" placeholder="Session/event location" required><small></small></label>
+        <label class="full">Additional message<textarea id="message" name="message" rows="4" placeholder="Tell us about your photography needs..."></textarea></label>
+      </div>
+      <label class="checkbox"><input id="agreement" type="checkbox" required><span>I understand this is a booking request and that the date is not confirmed until the photographer responds.</span></label><small class="agreement-error"></small>
+      <div class="summary" id="summary"><h3>Booking Summary</h3><p>Complete the form to review your request here.</p></div>
+      <button class="btn btn-primary full-btn" type="submit">Submit Booking Request</button>
+      <div class="form-message" id="formMessage" role="alert"></div>
+    </form>
+  </div>
+</section>
+
+<section class="section section-dark" id="testimonials">
+  <div class="container">
+    <div class="section-heading light"><div><p class="eyebrow">Client Words</p><h2>Kind words from <em>clients.</em></h2></div><p>Sample content only — replace with genuine client reviews before publication.</p></div>
+    <div class="testimonial-wrap">
+      <button class="slider-btn" id="prevTestimonial" aria-label="Previous testimonial">‹</button>
+      <div class="testimonial-track" id="testimonialTrack">
+        <article class="testimonial active"><div class="stars">★★★★★</div><blockquote>“[Sample testimonial — replace with a genuine client review.]”</blockquote><p>[CLIENT NAME] · [SERVICE]</p></article>
+        <article class="testimonial"><div class="stars">★★★★★</div><blockquote>“[Sample testimonial — replace with a genuine client review.]”</blockquote><p>[CLIENT NAME] · [SERVICE]</p></article>
+        <article class="testimonial"><div class="stars">★★★★★</div><blockquote>“[Sample testimonial — replace with a genuine client review.]”</blockquote><p>[CLIENT NAME] · [SERVICE]</p></article>
+      </div>
+      <button class="slider-btn" id="nextTestimonial" aria-label="Next testimonial">›</button>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container"><p class="eyebrow">Your story deserves to be remembered</p><h2>Let's Create Something <em>Beautiful Together.</em></h2><a class="btn btn-primary" href="#booking">Book Your Session</a></div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container contact-grid">
+    <div><p class="eyebrow">Get in Touch</p><h2>Let's talk about your <em>next story.</em></h2><p>Use the placeholders below until your real contact details are available.</p><div class="contact-list"><p><i class="fa-solid fa-phone"></i><span>[PHONE NUMBER]</span></p><p><i class="fa-solid fa-envelope"></i><span>[EMAIL ADDRESS]</span></p><p><i class="fa-solid fa-location-dot"></i><span>[LOCATION]</span></p><p><i class="fa-regular fa-clock"></i><span>[BUSINESS HOURS]</span></p></div><div class="socials"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></div></div>
+    <form class="contact-form" id="contactForm"><label>Name<input type="text" required placeholder="Your name"></label><label>Email<input type="email" required placeholder="you@example.com"></label><label>Message<textarea rows="6" required placeholder="How can we help?"></textarea></label><button class="btn btn-dark" type="submit">Send Message</button><div class="form-message" id="contactMessage"></div></form>
+    <div class="map-placeholder"><i class="fa-solid fa-map-location-dot"></i><span>Google Maps embed placeholder</span><small>Replace this area with your verified studio/location map.</small></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="container footer-grid"><div><a class="logo" href="#home">[PHOTOGRAPHER NAME]</a><p>Photography that preserves the moments you never want to forget.</p></div><div><h4>Quick Links</h4><a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#services">Services</a><a href="#booking">Booking</a></div><div><h4>Services</h4><a href="#services">Weddings</a><a href="#services">Portraits</a><a href="#services">Events</a><a href="#services">Corporate</a></div><div><h4>Contact</h4><p>[PHONE NUMBER]</p><p>[EMAIL ADDRESS]</p><p>[LOCATION]</p></div></div><div class="container footer-bottom"><span>© <span id="year"></span> [PHOTOGRAPHER NAME]. All rights reserved.</span><a href="#top">Back to top ↑</a></div></footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button><button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous image">‹</button><figure><img id="lightboxImage" src="" alt=""><figcaption id="lightboxCaption"></figcaption></figure><button class="lightbox-nav next" id="lightboxNext" aria-label="Next image">›</button></div>
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>
